@@ -653,25 +653,24 @@ Sn="";
     }//GEN-LAST:event_jbtnDOTActionPerformed
 
     private void jbtnXsqrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnXsqrActionPerformed
-       if(f==1){
+         if(f==1){
        jtxtResult.setText(" ");
       double a=(Double.parseDouble(jtxtResult.getText()));
-       double ans=Math.sin(Math.toRadians((a)));
-      
-     // jtxtResult.setText(jtxtResult.getText()+ a);
-    // jtxtResult.setText("");
-     jtxtResult.setText(String.valueOf(ans));
+       a=a*a;
+      jtxtResult.setText("");
+      jtxtResult.setText(jtxtResult.getText()+ a);
        
     }                                          
     else{
        double a=(Double.parseDouble(jtxtResult.getText()));
-       double ans=Math.sin(Math.toRadians((a)));
-      
-     // jtxtResult.setText(jtxtResult.getText()+ a);
-    // jtxtResult.setText("");
-     jtxtResult.setText(String.valueOf(ans));
+       a=a*a;
+      jtxtResult.setText("");
+      jtxtResult.setText(jtxtResult.getText()+ a);
     }
-    f=1; 
+    f=0; 
+      
+                                             
+    
     }//GEN-LAST:event_jbtnXsqrActionPerformed
 
     private void jbtnSinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSinActionPerformed
